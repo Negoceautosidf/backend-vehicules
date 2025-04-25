@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicules",
+  "info": {
+    "singularName": "vehicule",
+    "pluralName": "vehicules",
+    "displayName": "Vehicule",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "prix": {
+      "type": "decimal"
+    },
+    "annee": {
+      "type": "integer"
+    },
+    "kilometrage": {
+      "type": "biginteger"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "disponible": {
+      "type": "boolean"
+    }
+  }
+}
